@@ -1,0 +1,16 @@
+Single responsibility principle:
+    - A class should have only one reason to change
+    - Separation of concerns - different classes handling different, independent tasks / problems
+
+Open-Closed principle:
+    - Classes should be open for extension and closed for modification
+
+Liskov Substitution principle:
+    - You should be able to substitute a base type for a sub type
+
+Interface Segregation principle:
+    - Don't put too much into an interface; split into separate interfaces
+    - YAGNI - You Are't Going to Need It
+
+Dependency Inversion principle:
+    - High level classes should not depend on low level classes; Use abstraction

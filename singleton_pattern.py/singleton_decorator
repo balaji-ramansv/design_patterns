@@ -1,0 +1,20 @@
+import random
+
+def singleton(cls):
+    inst = {}
+    def get_instance(*args, **kwargs):
+        if cls not in inst:
+            inst[cls] = cls(*args, **kwargs)
+        print(f"using database with inst id {inst[cls].inst_id}")
+        return inst[cls]
+    return get_instance
+
+@singleton
+class Database:
+    def __init__(self):
+        self.inst_id = random.choice(range(1, 101))
+        print(f"Database inst id: {self.inst_id} initialized")
+
+d1 = Database()
+d2 = Database()
+print(d1 == d2)
